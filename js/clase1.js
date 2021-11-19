@@ -83,13 +83,14 @@ let monto = 0;
 while (intentos <= 3 && intentos > 0) {
     clave = window.prompt("Escribe tu clave secreta");
     if (claveC == clave) {
-        var opcion = window.prompt("Bienvenido, marque el número de opción:\n1- consulta\n2- depósito\n3- retiro");
+        var opcion = parseInt(window.prompt("Bienvenido, marque el número de opción:\n1- consulta\n2- depósito\n3- retiro"));
         switch (opcion) {
             case 1:
                 document.write(`Su saldo es ${saldo}`);
+                console.log(saldo)
                 break;
             case 2:
-                monto = window.prompt("Monto a depositar");
+                monto = parseInt(window.prompt("Monto a depositar"));
                 saldo += monto;
                 document.write(`Depósito realizado correctamente, su saldo es ${saldo}`);
                 break;
