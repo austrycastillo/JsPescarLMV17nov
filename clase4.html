@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 4 Js</title>
+    <link rel="stylesheet" href="css/clase4.css">
+</head>
+
+<body>
+    <form action="ejecutar.php" method="post" id="form" enctype="multipart/form-data">
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" placeholder="ej. Juan">
+        <span class="p-nombre" id="p-nombre">
+            El nombre debe tener entre 4 a 10 caracteres y solo letras
+        </span>
+        <label for="correo">Correo:</label>
+        <input type="text" name="correo" id="correo" placeholder="ej. nombre@correo.com">
+        <span class="p-correo" id="p-correo">
+            El correo debe cumplir con el formato de correo nombre@correo.com
+        </span>
+        <hr>
+        <input type="submit" value="Enviar información" id="enviar">
+        <span class="p-submit" id="p-submit">
+
+        </span>
+    </form>
+    <hr>
+    <div id="reloj">
+
+    </div>
+    <script src="js/clase4.js"></script>
+</body>
+
+</html>

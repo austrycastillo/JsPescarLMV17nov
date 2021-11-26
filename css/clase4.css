@@ -1,0 +1,43 @@
+body{
+    background-color: rgb(160, 187, 214);
+}
+label{
+    display: block;
+    font-weight: bold;
+    padding: 10px;
+}
+input{
+    width: 35%;
+    height: 40px;
+    margin-top: 10px;
+    border: 3px solid transparent;
+    border-radius: 6px;
+    padding: 0 20px;
+}
+#enviar{
+    background-color: chocolate;
+    color: #fff;
+    width: 20%;
+    cursor: pointer;
+}
+.p-nombre,.p-correo{
+    display: none;
+}
+.input-correcto{
+    border: 3px solid greenyellow;
+    box-shadow: 3px 0 30px rgb(82, 128, 15);
+    outline: none;
+}
+.input-incorrecto{
+    border: 3px solid red;
+    box-shadow: 2px 0 15px rgb(95, 11, 11);
+    outline: none;
+}
+.p-nombre-error,.p-correo-error,.p-submit-error{
+    display: block;
+    color: red;
+}
+.p-submit-enviado{
+    display: block;
+    color: greenyellow;
+}
