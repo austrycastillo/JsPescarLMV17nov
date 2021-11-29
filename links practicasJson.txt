@@ -1,0 +1,13 @@
+https://jsonplaceholder.typicode.com/posts?callback=mostrar
+https://rickandmortyapi.com/
+https://pokeapi.co/
+https://dog.ceo/dog-api/
+https://www.argentina.gob.ar/onti/software-publico/catalogo/apis
+https://picsum.photos/
+https://swapi.dev/api/films
+https://www.dolarsi.com/api/api.php?type=valoresprincipales
+https://restcountries.eu/rest/v2/all
+https://randomuser.me/
+https://www.dolarsi.com/api/api.php?type=valoresprincipales
+https://www.themoviedb.org/documentation/api
+https://github.com/public-apis/public-apis

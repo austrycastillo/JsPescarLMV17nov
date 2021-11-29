@@ -1,0 +1,20 @@
+[
+    {
+        "nombre": "placa de vídeo",
+        "marca": "nvidia",
+        "precio": 1500,
+        "stock": 12
+    },
+    {
+        "nombre": "notebook",
+        "marca": "msi",
+        "precio": 180000,
+        "stock": 24
+    },
+    {
+        "nombre": "auriculares",
+        "marca": "corsair",
+        "precio": 20000,
+        "stock": 5
+    }
+]
