@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 7 Js</title>
+    <style>
+        #vistaPrevia {
+            max-width: 100px;
+            max-height: 100px;
+        }
+
+        #caja {
+            width: 250px;
+            height: 250px;
+            border: 5px dashed rgb(207, 18, 113);
+            border-radius: 8px;
+            background-color: hotpink;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        #div1,
+        #div2,
+        #div3 {
+            width: 150px;
+            height: 50px;
+            border: 1px solid black;
+            float: left;
+            margin-left: 10px;
+            padding: 7px;
+        }
+
+        .tareas {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <h1>form-data</h1>
+    <form action="" enctype="multipart/form-data" name="formulario">
+        <input type="text" name="nombre" id="">
+        <input type="text" name="edad" id="">
+        <input type="file" name="archivo" id="">
+        <button>enviar</button>
+        <img src="" id="vistaPrevia">
+        <p class="archi">
+
+        </p>
+    </form> -->
+
+    <!-- <h1>DRAG AND DROP</h1>
+    <p>Arrastra una imagen:</p>
+    <div id="caja">
+
+    </div> -->
+
+    <h1>Gestión de tareas</h1>
+    <p>Tareas pendientes, en proceso y terminadas</p>
+    <div id="div1" ondrop="drop(event)" ondragover="permitir(event)">
+        <img src="tareas.jpg" class="tareas" ondragstart="drag(event)" id="drag1" draggable="true">
+    </div>
+    <div id="div2" ondrop="drop(event)" ondragover="permitir(event)"></div>
+    <div id="div3" ondrop="drop(event)" ondragover="permitir(event)"></div>
+    <script src="js/clase7.js"></script>
+</body>
+
+</html>

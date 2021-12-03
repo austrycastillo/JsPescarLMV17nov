@@ -66,7 +66,7 @@ a.forEach((link) => {
         var p = document.querySelectorAll("p")
         history.pushState({
             tab: clase
-        },null,"tab- " + clase)
+        }, null, "tab- " + clase)
         p.forEach(contenido => {
             // console.log(contenido)
             // console.log(contenido.id)
@@ -79,5 +79,22 @@ a.forEach((link) => {
                 contenido.classList.add("hide")
             }
         })
+    })
+})
+window.addEventListener("popstate", (e) => {
+    console.log(e.state.tab)
+    var a = e.state.tab
+    var p = document.querySelectorAll("p")
+    p.forEach(contenido => {
+        // console.log(contenido)
+        // console.log(contenido.id)
+        var id = contenido.id
+        if (a == id) {
+            contenido.classList.remove("hide")
+            contenido.classList.add("active")
+        } else {
+            contenido.classList.remove("active")
+            contenido.classList.add("hide")
+        }
     })
 })
