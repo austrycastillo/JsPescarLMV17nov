@@ -107,6 +107,7 @@
 //
 let anterior = document.getElementById("btnAnterior")
 let siguiente = document.getElementById("btnSiguiente")
+let espacio = document.getElementById("espacio")
 let pagina = 1
 anterior.addEventListener("click", () => {
     if (pagina > 1) {
@@ -126,7 +127,33 @@ const cargarPeliculas = async () => {
         if (respuesta.status == 200) {
             const datos = await respuesta.json()
             // console.log(datos)
-            console.log(datos.results)
+            // console.log(datos.results)
+            // console.log(datos.results[2].id)
+            let peliculas = ''
+            datos.results.forEach(element => {
+                console.log(element)
+                //console.log(element.id)
+                var div = document.createElement("div")
+                var h3 = document.createElement("h3")
+                var img = document.createElement("img")
+                var p = document.createElement("p")
+                var a = document.createElement("a")
+                h3.innerHTML = element.title
+                div.appendChild(h3)
+                p.innerHTML = element.overview
+                div.appendChild(p)
+                a.innerHTML = element.id
+                a.href = `https://www.themoviedb.org/t/p/w600_and_h900_bestv2/${element.poster_path}`
+                a.target = "_blank"
+                div.appendChild(a)
+                img.src = `https://www.themoviedb.org/t/p/w600_and_h900_bestv2/${element.poster_path}`
+                div.appendChild(img)
+                espacio.appendChild(div)
+            });
+        } else if (respuesta.status == 404) {
+            console.log("la peli no existe")
+        } else if (respuesta.status == 401) {
+            console.log("pusiste mal una llave")
         }
     } catch (error) {
         console.log(error)
